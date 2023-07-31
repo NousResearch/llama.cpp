@@ -4188,15 +4188,15 @@ const char * llama_token_to_str(const struct llama_context * ctx, llama_token to
 }
 
 llama_token llama_token_bos() {
-    return 1;
+    return 50256;
 }
 
 llama_token llama_token_eos() {
-    return 2;
+    return 50256;
 }
 
 llama_token llama_token_nl() {
-    return 13;
+    return 198;
 }
 
 struct llama_timings llama_get_timings(struct llama_context * ctx) {
