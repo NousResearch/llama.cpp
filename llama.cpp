@@ -124,12 +124,12 @@ static const std::map<e_model, size_t> & MEM_REQ_SCRATCH0(int n_ctx)
 static const std::map<e_model, size_t> & MEM_REQ_SCRATCH1()
 {
     static std::map<e_model, size_t> k_sizes = {
-        { MODEL_3B,  304ull * MB },
-        { MODEL_7B,  304ull * MB },
-        { MODEL_13B, 304ull * MB },
-        { MODEL_30B, 304ull * MB },
-        { MODEL_65B, 304ull * MB }, // guess
-        { MODEL_70B, 304ull * MB },
+        { MODEL_3B,  1024ull * MB },
+        { MODEL_7B,  1024ull * MB },
+        { MODEL_13B, 1024ull * MB },
+        { MODEL_30B, 1024ull * MB },
+        { MODEL_65B, 1024ull * MB }, // guess
+        { MODEL_70B, 1024ull * MB },
     };
     return k_sizes;
 }
